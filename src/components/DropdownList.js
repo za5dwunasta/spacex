@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 import './DropdownList.scss';
 
-function DropdownList({ text, icon, list, handleFunction, loading }) {
+function DropdownList({ text, icon, handleFunction, list }) {
 	const [ isOpen, setIsOpen ] = useState();
 	const nodeRef = useRef(null);
 	function dropdownOpen() {
@@ -14,7 +14,7 @@ function DropdownList({ text, icon, list, handleFunction, loading }) {
 
 	return (
 		<div className="dropdown">
-			<Button text={text} icon={icon} eventHandler={dropdownOpen} loading={loading} />
+			<Button text={text} icon={icon} eventHandler={dropdownOpen} />
 			<CSSTransition
 				in={isOpen === true}
 				nodeRef={nodeRef}
@@ -44,8 +44,10 @@ function DropdownList({ text, icon, list, handleFunction, loading }) {
 
 DropdownList.propTypes = {
 	text: PropTypes.string.isRequired,
+	list: PropTypes.array.isRequired,
+
 	icon: PropTypes.string.isRequired,
-	eventHandler: PropTypes.func.isRequired
+	handleFunction: PropTypes.func.isRequired
 };
 
 export default DropdownList;
