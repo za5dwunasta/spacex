@@ -1,0 +1,15 @@
+@import '../variables';
+
+.home {
+    margin-left: 2.5rem;
+    display: flex;
+    &__image-container {
+      min-width: 40%;
+      margin-top: 7rem;
+      margin-right: 3.75rem;
+    }
+    &__landing-image {
+        max-width: 100%;
+    }
+    
+}
