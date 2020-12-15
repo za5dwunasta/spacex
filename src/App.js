@@ -1,13 +1,17 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
+
 import Header from './layouts/Header';
 import Home from './layouts/Home';
+import { LaunchesProvider } from './context/launches-context';
 
 function App() {
 	return (
-		<div className="App">
-			<Header />
-			<Home />
-		</div>
+		<LaunchesProvider>
+			<div className="App">
+				<Header />
+				<Home />
+			</div>
+		</LaunchesProvider>
 	);
 }
 

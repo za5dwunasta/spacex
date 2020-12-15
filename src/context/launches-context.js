@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import { useAllLaunches } from '../hooks/useAllLaunches';
 
 export const LaunchesContext = createContext();
+// eslint-disable-next-line react/prop-types
 export const LaunchesProvider = ({ children }) => {
 	const { allLaunches, launches, setLaunches, loading, yearsList, setRefresh, error } = useAllLaunches();
 	const [ order, setOrder ] = useState('desc');
