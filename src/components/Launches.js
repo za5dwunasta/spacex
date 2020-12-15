@@ -1,5 +1,17 @@
 import React from 'react';
 
-export default function Launches() {
-	return <div />;
+import LaunchesListFilters from '../components/LaunchesListFilters';
+import LaunchesList from '../components/LaunchesList';
+
+import './Launches.scss';
+
+function Launches() {
+	return (
+		<div className="launches-container">
+			<LaunchesListFilters />
+			<LaunchesList />
+		</div>
+	);
 }
+
+export default Launches;
