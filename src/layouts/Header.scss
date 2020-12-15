@@ -1,0 +1,27 @@
+@import '../variables';
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1.5rem;
+  &__logo {
+    display: flex;
+    align-items: baseline;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  &__brand-name {
+    color: $font-color;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: $font-family;
+    letter-spacing: 1.09px;
+    margin-left: -15px;
+  }
+  button {
+    min-width: 130px;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../variables';
+
+.button {
+    border: 0;
+    background-color: $primary-blue;
+    font-size: 1rem;;
+    font-weight: 700;
+    font-family: $font-family;
+    color: #fff;
+    padding: 0.625rem 1rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &--refresh{
+        border-radius: 21.5px 0px 0px 21.5px;
+    }
+    &__icon {
+        padding-left: 0.5rem;
+    }
+    &:hover {
+        background-color: darken($primary-blue, 5%)
+    }
+    &:disabled {
+        opacity: 0.5;
+    }
+}
