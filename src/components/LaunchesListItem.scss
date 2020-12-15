@@ -16,10 +16,17 @@
     &__no {
         font-size: 2.5rem;
         min-width: 4.75rem;
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 2rem;
+            min-width: 3.75rem;
+          }
     }
     &__mission-name {
         font-size: 2rem;
         margin-left: 1.5rem;
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 1.5rem;
+          }
     }
     &__details {
         display: flex;

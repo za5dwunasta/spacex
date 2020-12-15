@@ -3,10 +3,18 @@
 .home {
     margin-left: 2.5rem;
     display: flex;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+     }
     &__image-container {
+    
       min-width: 40%;
       margin-top: 7rem;
       margin-right: 3.75rem;
+      @media screen and (max-width: $breakpoint-tablet) {
+        display:none;
+       }
     }
     &__landing-image {
         max-width: 100%;

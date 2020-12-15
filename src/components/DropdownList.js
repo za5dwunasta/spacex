@@ -45,7 +45,6 @@ function DropdownList({ text, icon, handleFunction, list }) {
 DropdownList.propTypes = {
 	text: PropTypes.string.isRequired,
 	list: PropTypes.array.isRequired,
-
 	icon: PropTypes.string.isRequired,
 	handleFunction: PropTypes.func.isRequired
 };
