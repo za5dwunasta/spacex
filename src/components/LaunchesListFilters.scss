@@ -1,4 +1,9 @@
+@import '../variables';
+
 .launches-filters {
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: $breakpoint-mobile) {
+        margin-bottom: 2rem;
+    }  
 }

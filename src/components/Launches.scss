@@ -4,9 +4,9 @@
     margin-right: 5rem;
     margin-top: 3.25rem;
     flex: 1 1 100%;
-   
     @media screen and (max-width: $breakpoint-tablet) {
         margin-right: 0rem;
+        margin-top: 2rem;
     }
     &__error {
         display: flex;

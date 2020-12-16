@@ -29,6 +29,7 @@ function LaunchesListFilters() {
 				isActive={true}
 				handleFunction={handleFilterYear}
 				loading={loading}
+				filterName="year of start"
 			/>
 			<DropdownList
 				text={`Sort ${order === 'desc' ? 'Descending' : 'Ascending'}`}
@@ -37,6 +38,7 @@ function LaunchesListFilters() {
 				isActive={true}
 				handleFunction={handleSort}
 				loading={loading}
+				filterName="order method"
 			/>
 		</div>
 	);

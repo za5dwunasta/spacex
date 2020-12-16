@@ -11,6 +11,11 @@
     margin-left: 0.5rem;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
     &__container {
         display: flex;
         flex-direction: column;

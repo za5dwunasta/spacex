@@ -30,8 +30,8 @@ function Button({ text, icon, eventHandler }) {
 }
 
 Button.propTypes = {
-	text: PropTypes.string.isRequired,
-	icon: PropTypes.string.isRequired,
+	text: PropTypes.string,
+	icon: PropTypes.string,
 	eventHandler: PropTypes.func.isRequired
 };
 
